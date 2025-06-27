@@ -19,15 +19,12 @@ const Home = () => {
       </ul>
 
       <h2>Popular Books:</h2>
-      <div style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center'
-      }}>
+      <div className="book-grid">
         {books.map(book => (
           <BookCard key={book.id} book={book} />
-        ))}
-      </div>
+  ))}
+</div>
+ 
     </div>
   );
 };
